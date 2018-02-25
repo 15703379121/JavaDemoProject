@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+    <android.support.v7.widget.CardView
+        android:layout_margin="5dp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_class_bg_item"
+                android:background="@color/bt_login"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:id="@+id/tv_class_bg_buttom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/item_title_size"
+                android:padding="5dp"
+                android:text="视频标题"
+                android:maxLines="1"
+                android:background="@color/white"
+                android:textColor="@color/bg_text"/>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</FrameLayout>

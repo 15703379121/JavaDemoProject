@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--正在加载中dialog-->
+    <style name="MaterialDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:tint">@color/bt_login</item>
+    </style>
+
+    <!-- RelativeLayout标题栏 -->
+    <style name="TitleRv">
+        <item name="android:background">@color/bt_login</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <!-- TextView标题 -->
+    <style name="TitleTv">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/tv_size</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_margin">7dp</item>
+    </style>
+
+    <!-- ImageButton标题 -->
+    <style name="TitleIb">
+        <item name="android:id">@id/back</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@mipmap/icon_back</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!-- button添加按钮 -->
+    <style name="TitleBtn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:textColor">@color/bg_text</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:text">添加</item>
+    </style>
+
+    <!--加载中对话框-->
+    <style name="RandomDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="Dialog_Find_Image">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/dialogWindowAnim</item>
+
+    </style>
+    <!-- //dialog的动画-->
+    <style name="dialogWindowAnim" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/find_dialog_show_anim</item>
+        <item name="android:windowExitAnimation">@anim/find_dialog_dismiss_anim</item>
+    </style>
+</resources>

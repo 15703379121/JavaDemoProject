@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除用户"
+        android:textColor="@color/black"
+        android:textSize="@dimen/title"
+        android:background="@color/bt_login"
+        android:padding="8dp"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/et_deldialog"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="编号"
+        android:padding="10dp"/>
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_deldialog_submit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textColor="@color/bg_text"/>
+
+        <Button
+            android:id="@+id/bt_deldialog_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textColor="@color/bg_text"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_dialog_info"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注：此操作按学号(职工号)的前缀批量删除，若仅删除一位用户，输入整个学号(职工号)即可"/>
+</LinearLayout>

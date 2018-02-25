@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#eae1d3</color>
+    <color name="bg_comment">#efece6</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="tc_title">#41864b</color>
+    <color name="transparent_half">#88000000</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="bt_login">#b38b4e</color>
+    <color name="bg_text">#5e4825</color>
+    <color name="grad">#8b8787</color>
+    <color name="transparent">#00000000</color>
+    <color name="video_gray">#aadddddd</color>
+    <color name="blue_dark">#ec7b01</color>
+    <color name="bg_publish">#efd1a3</color>
+</resources>

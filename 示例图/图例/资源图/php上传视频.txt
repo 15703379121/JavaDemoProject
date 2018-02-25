@@ -1,0 +1,23 @@
+//视频接口
+	public function spupload(){
+		$file = request()->file('video');
+		if($file != null){
+          	$info = $file->move('scvideo');
+          	if($info){
+	            return ['status'=>'1','msg'=>'视频上传成功','video'=>$info->getSaveName()];
+	        }else{
+	         	$list = [
+					'status'  =>   0,
+					'msg'     =>   '视频上传失败'
+				];
+				return ['list'=>$list];
+	        }
+		}else{
+			$list = [
+				'status'  =>   -1,
+				'msg'     =>   '视频为空'
+			];
+			return ['list'=>$list];
+		}
+	}
+	
